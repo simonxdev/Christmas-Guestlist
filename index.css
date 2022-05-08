@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1576741713169-ddbd38095765?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80");
+    background-size: cover;
+    font-family: 'Mountains of Christmas',"Arial", cursive;
+}
+
+.container {
+    background: rgb(16,143,33);
+    background: linear-gradient(0deg, rgba(16,143,33,0.6758055272890406) 0%, rgba(199,55,95,0.7234245749080883) 100%);
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    -moz-box-shadow: 0px 5px 56px #c73760;
+    -webkit-box-shadow: 0px 5px 56px #c73760;
+    box-shadow: 0px 5px 56px #c73760;
+}
+
+h1 { 
+    margin: 0;
+}
+
+form *:not(label),
+.guest-list {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    justify-content: space-around;
+}
+
+
+form * {
+   padding: .54em;
+   font-size: 1.3rem
+}
+
+label {
+    padding: 0;
+}
+
+input { 
+    background: var(--snow)
+}
+
+.guest-list {
+    color: var(--wine-red);
+    min-width: 220px;
+    max-width: 5ch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--snow);
+    padding: 1em 2em;
+}
+
+li {
+    padding: 0.25em;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+button {
+    background: var(--dark-green);
+    color: var(--snow);
+    margin-top:5px;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#btnremovelast,
+#btnremoveevil{
+    background-color:#C7375F;
+}
